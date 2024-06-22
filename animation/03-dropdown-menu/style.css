@@ -6,6 +6,8 @@
   font-size: 15px;
   color: rgb(247, 247, 247);
   cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: tra;
 }
 
 .menu-title {
@@ -28,5 +30,25 @@ ul.dropdown-menu li:hover {
 .visible {
   display: block;
 }
+
+.visible {
+  animation: expand 500ms ease-in-out;
+  transform-origin: right;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+
+  70% {
+    transform: scaleY(1.1);
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 
 
